@@ -32,6 +32,12 @@
 					<th>
 						17th Jan
 					</th>
+					<th>
+						24th Jan
+					</th>
+					<th>
+						31st Jan
+					</th>
 				</tr>
 				<tr>
 					<td>
@@ -96,24 +102,24 @@
 			<canvas id="myChart" style="width:100%;max-width:700px"></canvas>
 			
 			<script>
-				var xValues = [100,200,300,400,500,600,700,800,900,1000];
+				var xValues = ["3rd Jan","10th Jan","17th Jan","24th Jan","31st Jan","7th Feb","14th Feb","21st Feb","28th Feb","7th Mar"];
 
 				new Chart("myChart", {
 				  type: "line",
 				  data: {
 					labels: xValues,
 					datasets: [{
-					  data: [1000,1140,1060,1060,1070,1110,1330,2210,7830,2478],
+					  data: [1000, 900],
 					  borderColor: "red",
 					  label: "Will",
 					  fill: false
 					},{
-					  data: [1000,1700,1700,1900,2000,2700,4000,5000,6000,7000],
+					  data: [1000, 800],
 					  borderColor: "green",
 					  label: "Sam",
 					  fill: false
 					},{
-					  data: [1000,700,2000,5000,6000,4000,2000,1000,200,100],
+					  data: [1000, 200],
 					  borderColor: "blue",
 					  label: "Edwin",
 					  fill: false
